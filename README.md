@@ -3,7 +3,7 @@
 A hands-on lab where I set up a fresh AWS account, scanned it with Prowler, and triaged the findings by risk. For each finding I decided whether to fix it, accept it, or mark it not applicable, and documented why.
 
 ## Environment
-
+| 6 | High | IAM user has no (hardware) MFA | Accept | `lab-admin` is CLI-only (no console password), so there is no MFA option for it in this account. Risk reduced by read-only permissions and planned key deletion |
 | Item | Detail |
 |---|---|
 | Cloud | AWS (Free plan, single account) |
@@ -21,7 +21,6 @@ A hands-on lab where I set up a fresh AWS account, scanned it with Prowler, and 
 - [x] Configured AWS CLI and verified identity with `aws sts get-caller-identity`
 - [x] Ran a Prowler scan (7 high/critical findings)
 - [x] Triaged all 7 findings (table below)
-- [ ] Enable MFA on `lab-admin`
 - [ ] Create a multi-region CloudTrail trail
 - [ ] Delete the `lab-admin` access key when the lab ends
 
