@@ -1,5 +1,3 @@
-# aws-security-lab
-Hands-on AWS security lab: IAM least privilege, Prowler scan &amp; risk triage with documented decisions
 # AWS Cloud Security Lab: Account Hardening & Risk Triage
 
 A hands-on lab where I set up a fresh AWS account, scanned it with Prowler, and triaged the findings by risk. For each finding I decided whether to fix it, accept it, or mark it not applicable, and documented why.
